@@ -1,0 +1,8 @@
+<form action="/show" method="get">
+    <label for="gif">Enter a word or a phrase here:</label><br>
+    <input type="text" name="gif"><br>
+    <input type="submit" value="Go Gif!">
+
+</form>
+
+<img class="gif", src="<%= @image_url%>" >
