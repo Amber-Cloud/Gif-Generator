@@ -1,20 +1,36 @@
 # GifGen
 
-To start your Phoenix server:
+This web application allows a user to enter a theme and view a randomly picked gif image according to the theme. The app uses Giphy API.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `npm install` inside the `assets` directory
-  * Start Phoenix endpoint with `mix phx.server`
+### Installing
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+This app requires your own API keys from Giphy. It is recommended to save the key as env variable GIPHY_API_KEY. If you do it, before you start the server, run
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+```
+source ./.env
+```
 
-## Learn more
+and 
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+```
+mix deps.get
+```
+
+### Starting the server
+To start the server on default port (80), run
+
+```
+mix phx.server
+```
+
+### Running the tests
+
+To run the tests, run
+
+```
+mix test
+```
+
+## Author
+
+Alisa Berdichevskaia [Amber-Cloud](https://github.com/Amber-Cloud)
